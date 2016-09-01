@@ -1,0 +1,25 @@
+{
+	"name": "SharedUserrights",
+	"author": [
+		"Lucas 'TOR' Garczewski <tor@wikia.com>",
+		"Maciej Błaszkowski (Marooned) <marooned at wikia-inc.com>",
+		"[http://community.wikia.com/wiki/User:TyA TyA]"
+	],
+	"url": "https://github.com/ty-a/SharedUserrights",
+	"descriptionmsg": "shareduserrights-desc",
+	"type": "other",
+	"manifest_version": 1,
+	"Hooks": {
+		"UserEffectiveGroups": "UserRights::userEffectiveGroups",
+		"UserAddGroup": "UserRights::addGlobalGroup",
+		"UserRemoveGroup": "UserRights::removeGlobalGroup"
+	},
+	"AutoloadClasses": {
+		"UserRights": "SharedUserrights.class.php"
+	},
+	"MessagesDirs": {
+		"SharedUserrights": [
+			"i18n"
+		]
+	}
+}
